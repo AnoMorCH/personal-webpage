@@ -1,0 +1,19 @@
+/* PAGINATION */
+/* Font inclusion */
+/* General */
+
+/* Font inclusion. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+/* General. */
+* {
+  margin: 0;
+  padding: 0; 
+  border: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  width: 1024px;
+  margin: 24px auto;
+}
