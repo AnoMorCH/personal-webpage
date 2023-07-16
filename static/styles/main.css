@@ -55,6 +55,16 @@ header > div:nth-child(2n) {
   margin: 6px 0;
 }
 
+/* - Logo */
+#logo:hover {
+  cursor: default;
+}
+
+#logo > span {
+  display: inline;
+  border-bottom: 4px solid var(--light-green-color);
+}
+
 /* Technical classes */
 .light-green-color {
   color: var(--light-green-color); 
