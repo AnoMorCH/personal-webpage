@@ -2,33 +2,59 @@
 /* 1. Font inclusion */
 /* 2. General */
 /* 3. Header */
-/* 3.1. Burger */
+/* 3.1. Main setups */
+/* 3.2. Burger */
+/* 4. Technical classes */
 
 /* 1. Font inclusion */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 2. Colors */
+:root {
+  --light-green-color: #21a038;
+}
 
 /* 2. General */
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   border: 0;
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 body {
   width: 1024px;
   margin: 24px auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 /* 3. Header */
-/* 3.1. Burger */
-.burger:hover {
+/* 3.1. Main setups */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+header > div:nth-child(2n) {
+  text-align: right;
+}
+
+/* 3.2. Burger */
+#burger:hover {
   cursor: pointer;
 }
 
-.burger > .line {
+#burger > .line {
   width: 26px;
   height: 4px;
   background-color: black;
   margin: 6px 0;
+}
+
+/* 4. Technical classes */
+.light-green-color {
+  color: var(--light-green-color); 
 }
