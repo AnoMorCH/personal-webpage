@@ -1,20 +1,21 @@
 /* PAGINATION */
-/* 1. Font inclusion */
-/* 2. General */
-/* 3. Header */
-/* 3.1. Main setups */
-/* 3.2. Burger */
-/* 4. Technical classes */
+/* Font inclusion */
+/* Colors */
+/* General */
+/* Header */
+/* - Main setups */
+/* - Burger */
+/* Technical classes */
 
-/* 1. Font inclusion */
+/* Font inclusion */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* 2. Colors */
+/* Colors */
 :root {
   --light-green-color: rgba(60, 179, 113, 1);
 }
 
-/* 2. General */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +29,8 @@ body {
   font-size: 20px;
 }
 
-/* 3. Header */
-/* 3.1. Main setups */
+/* Header */
+/* - Main setups */
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -42,7 +43,7 @@ header > div:nth-child(2n) {
   text-align: right;
 }
 
-/* 3.2. Burger */
+/* - Burger */
 #burger:hover {
   cursor: pointer;
 }
@@ -54,7 +55,7 @@ header > div:nth-child(2n) {
   margin: 6px 0;
 }
 
-/* 4. Technical classes */
+/* Technical classes */
 .light-green-color {
   color: var(--light-green-color); 
 }
