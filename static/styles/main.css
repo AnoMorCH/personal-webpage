@@ -3,8 +3,10 @@
 /* Colors */
 /* General */
 /* Header */
+/* TODO. Remove "Main" from "Main setups". */
 /* - Main setups */
 /* - Burger */
+/* Main */
 /* Technical classes */
 
 /* Font inclusion */
@@ -32,6 +34,7 @@ body {
 /* Header */
 /* - Main setups */
 header {
+  max-height: 20vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -65,6 +68,25 @@ header > div:nth-child(2n) {
 #logo > span {
   display: inline;
   border-bottom: 4px solid var(--light-green-color);
+}
+
+/* Main */
+/* - Setups */
+main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+
+main > * {
+  margin: 16px 0;
+}
+
+#authors-name {
+  font-size: 96px;
+  font-weight: bold;
+  color: var(--light-green-color);
 }
 
 /* Technical classes */
