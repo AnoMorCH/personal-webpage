@@ -3,8 +3,7 @@
 /* Colors */
 /* General */
 /* Header */
-/* TODO. Remove "Main" from "Main setups". */
-/* - Main setups */
+/* - Setups */
 /* - Burger */
 /* Main */
 /* Technical classes */
@@ -32,7 +31,7 @@ body {
 }
 
 /* Header */
-/* - Main setups */
+/* - Setups */
 header {
   max-height: 20vh;
   display: grid;
@@ -71,7 +70,6 @@ header > div:nth-child(2n) {
 }
 
 /* Main */
-/* - Setups */
 main {
   position: absolute;
   top: 50%;
