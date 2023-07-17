@@ -35,8 +35,9 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 18px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 header > div:nth-child(2n) {
@@ -55,11 +56,12 @@ header > div:nth-child(2n) {
   margin: 6px 0;
 }
 
-/* - Logo */
-#logo:hover {
-  cursor: default;
+/* - Language Switch */
+#language-switch > span:hover {
+  cursor: pointer;
 }
 
+/* - Logo */
 #logo > span {
   display: inline;
   border-bottom: 4px solid var(--light-green-color);
