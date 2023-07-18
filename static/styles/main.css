@@ -6,6 +6,8 @@
 /* - Setups */
 /* - Burger */
 /* Main */
+/* - Home */
+/* - Projects */
 /* Technical classes */
 
 /* Font inclusion */
@@ -106,8 +108,7 @@ main > * {
   margin: 16px 0;
 }
 
-/* There are special styles for the main block which is located at the home 
-page. */
+/* - Home */
 main#home {
   position: absolute;
   top: 50%;
@@ -138,6 +139,62 @@ main#home > * {
 @media (max-width: 768px) {
   #authors-name {
     font-size: 48px;
+  }
+}
+
+/* - Projects */
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+#projects-container .content-img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#projects-container .content-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#projects-container .content-img div {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+#projects-container .content-img:hover {
+  cursor: pointer;
+}
+
+#projects-container .content-img:hover div {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  #projects-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
