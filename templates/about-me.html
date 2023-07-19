@@ -17,9 +17,9 @@
       </div>
 
       <div id="language-switch">
-        <span>ru</span>
+        <span id="english">ru</span>
         /
-        <span>en</span>
+        <span id="russian">en</span>
       </div>
 
       <div id="logo" class="light-green-underline">
@@ -30,7 +30,7 @@
     </header>
 
     <main>
-      <p>
+      <p id="first-line">
         hello! i'm
 
         <span class="bold-font"> a fullstack web developer </span>
@@ -46,7 +46,7 @@
         </span>
       </p>
 
-      <p>
+      <p id="second-line">
         currently i study as
 
         <span class="bold-font"> a computer science student at spbstu </span>
@@ -65,35 +65,37 @@
       </p>
 
       <div>
-        <p class="bold-font">my characteristics</p>
+        <p id="characteristics-title" class="bold-font">my characteristics</p>
         <ul>
           <li>
             <i class="fa-solid fa-hammer light-green-color"></i>
-            python / html / css / js
+            <span id="pl">python / html / css / js</span>
           </li>
 
           <li>
             <i class="fa-solid fa-ruler-combined light-green-color"></i>
-            postgresql / docker / celery / nginx / apache
+            <span id="techs">postgresql / docker / celery / nginx / apache</span>
           </li>
 
           <li>
             <i class="fa-solid fa-laptop light-green-color"></i>
-            archlinux / neovim / vscode
+            <span id="tools">archlinux / neovim / vscode</span> 
           </li>
 
           <li>
             <i class="fa-solid fa-table-tennis-paddle-ball light-green-color"></i>
-            computers / reading / investments / handmade
+            <span id="hobbies">computers / reading / investments / handmade</span> 
           </li>
         </ul>
       </div>
 
       <div>
-        <p class="bold-font">contact me</p>
+        <p id="contact-me-title" class="bold-font">contact me</p>
 
-        i see my job as art and like unusual tasks so don't be shy to write 
-        to me about any it idea you have
+        <span id="contact-me-description">
+          i see my job as art and like unusual tasks so don't be shy to write 
+          to me about any it idea you have
+        </span> 
 
         <ul>
           <li>
@@ -125,4 +127,9 @@
   </body>
 
   <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="../static/scripts/language-switches/support.js"></script>
+  <script src="../static/scripts/language-switches/available-languages.js"></script>
+  <script src="../static/scripts/language-switches/set-current-language.js"></script>
+  <script src="../static/scripts/language-switches/about-me.js"></script>
 </html>
