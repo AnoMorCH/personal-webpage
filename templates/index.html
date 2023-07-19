@@ -17,9 +17,9 @@
       </div>
 
       <div id="language-switch">
-        <span>ru</span> 
+        <span id="english">en</span> 
         /
-        <span>en</span> 
+        <span id="russian">ru</span> 
       </div>
 
       <div id="logo" class="light-green-underline">
@@ -33,11 +33,17 @@
 
     <main id="home">
       <div id="authors-name">anton morozov</div>
-      <p>a python web developer</p>
-      <p>i've been worked in software craftsmanship since 2022</p>
+      <p id="occupation">a python web developer</p>
+      <p id="experience">i've been worked in software craftsmanship since 2022</p>
       <p>
-        <a href="">about me</a>
+        <a id="about-me" href="">about me</a>
       </p>
     </main>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="../static/scripts/language-switches/support.js"></script>
+  <script src="../static/scripts/language-switches/available-languages.js"></script>
+  <script src="../static/scripts/language-switches/set-current-language.js"></script>
+  <script src="../static/scripts/language-switches/index.js"></script>
 </html>
