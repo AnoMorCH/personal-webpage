@@ -1,5 +1,6 @@
 {
   "english": {
+    "title": "Anton Morozov | Python Web Developer",
     "english": "en",
     "russian": "ru",
     "page-name": "projects",
@@ -8,6 +9,7 @@
     "graphs-for-the-rating-of-cities": "graphs for the rating of cities (2022)"
   },
   "russian": {
+    "title": "Антон Морозов | Python Веб-Разработчик",
     "english": "анг",
     "russian": "ру",
     "page-name": "проекты",

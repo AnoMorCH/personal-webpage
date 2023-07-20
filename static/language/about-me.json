@@ -1,5 +1,6 @@
 {
   "english": {
+    "title": "Anton Morozov | Python Web Developer",
     "english": "en",
     "russian": "ru",
     "page-name": "about me",
@@ -11,6 +12,7 @@
     "contact-me-description": "i see my job as art and like unusual tasks so don't be shy to write to me about any it idea you have"
   },
   "russian": {
+    "title": "Антон Морозов | Python Веб-Разработчик",
     "english": "анг",
     "russian": "ру",
     "page-name": "обо мне",

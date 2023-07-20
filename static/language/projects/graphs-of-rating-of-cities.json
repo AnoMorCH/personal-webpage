@@ -1,5 +1,6 @@
 {
   "english": {
+    "title": "Anton Morozov | Python Web Developer",
     "english": "en",
     "russian": "ru",
     "page-name": "projects",
@@ -18,6 +19,7 @@
     "description-description": "the project was rethinking of the idea of the app created during my summer university practice in 2022. its main target was developing of lucid graphs to depict a rating of public transport in russia without extensive data"
   },
   "russian": {
+    "title": "Антон Морозов | Python Веб-Разработчик",
     "english": "анг",
     "russian": "ру",
     "page-name": "проекты",
