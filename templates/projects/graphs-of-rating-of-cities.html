@@ -15,9 +15,9 @@
       </div>
 
       <div id="language-switch">
-        <span>ru</span>
+        <span id="russian">ru</span>
         /
-        <span>en</span>
+        <span id="english">en</span>
       </div>
 
       <div id="logo" class="light-green-underline">
@@ -30,22 +30,22 @@
     <main>
       <div>
         <div>
-          <span class="bold-font">project name:</span>
-          <span>the graphs of rating of cities</span>
+          <span id="project-header" class="bold-font">project name:</span>
+          <span id="project-description">the graphs of rating of cities</span>
         </div>
 
         <div>
-          <span class="bold-font">customer name:</span>
-          <span>llc a+s transproekt</span> 
+          <span id="customer-header" class="bold-font">customer name:</span>
+          <span id="customer-description">llc a+s transproekt</span> 
         </div>
         
         <div>
-          <span class="bold-font">timespan:</span>
+          <span id="timespan-header" class="bold-font">timespan:</span>
           <span>2022</span>
         </div>
 
         <div>
-          <span class="bold-font">web-page:</span>
+          <span id="web-page-link-header" class="bold-font">web-page:</span>
           <span>
             <a href="https://rating.simetragroup.ru/cities/Moscow/">
               https://rating.simetragroup.ru/cities/Moscow/
@@ -54,19 +54,19 @@
         </div>
 
         <div>
-          <span class="bold-font">responsibilities:</span>
-          <span>
+          <span id="responsibilities-header" class="bold-font">responsibilities:</span>
+          <span id="responsibilities-description">
             python on django, 
             frontend on html / css / js and chartjs
           </span>
         </div>
 
         <div>
-          <span class="bold-font">description:</span>
-          <span>
+          <span id="description-header" class="bold-font">description:</span>
+          <span id="description-description">
             the project was rethinking of the idea of the app created 
             during my summer university practice in 2022. its main target
-            was creating of lucid graphs to depict a rating of public transport
+            was developing of lucid graphs to depict a rating of public transport
             in russia without extensive data
           </span>
         </div>
@@ -96,5 +96,10 @@
     </main>
 
     <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="../../static/scripts/language-switches/support.js"></script>
+    <script src="../../static/scripts/language-switches/available-languages.js"></script>
+    <script src="../../static/scripts/language-switches/set-current-language.js"></script>
+    <script src="../../static/scripts/language-switches/projects/graphs-of-rating-of-cities.js"></script>
   </body>
 </html>
