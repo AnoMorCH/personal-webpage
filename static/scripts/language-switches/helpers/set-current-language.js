@@ -1,10 +1,12 @@
 // Set up a language. 
 
 const languageVarName = "language";
+const lightGreenColorClassName = "light-green-color";
 
 setInitialLanguage();
 const languageSwitchBtns = getLanguageSwitchBtns();
 setEventsOnLanguageSwitchBtns(languageSwitchBtns);
+colorSelectedLanguageBtn();
 
 function getLanguageSwitchBtns() {
   const languages = document.getElementById("language-switch");
@@ -23,15 +25,18 @@ function setEventsOnLanguageSwitchBtns(languageSwitchBtns) {
 }
 
 function setCurrentLanguageCookie(selectedLanguage) {
-  if (selectedLanguage == Language.English) {
-    Cookies.set(languageVarName, Language.English);
-  } else if (selectedLanguage == Language.Russian) {
-    Cookies.set(languageVarName, Language.Russian);
-  }
+  Cookies.set(languageVarName, selectedLanguage);
+}
+
+function colorSelectedLanguageBtn() {
+  const currentLanguage = getCurrentLanguage(); 
+  const languageBtn = document.getElementById(currentLanguage);
+  languageBtn.classList.add(lightGreenColorClassName);
 }
 
 function setInitialLanguage() {
-  if (Cookies.get(languageVarName) === undefined) {
+  const currentLanguage = getCurrentLanguage(); 
+  if (currentLanguage === undefined) {
     Cookies.set(languageVarName, Language.English);
   };
 }
