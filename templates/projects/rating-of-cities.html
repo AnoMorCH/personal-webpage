@@ -15,9 +15,9 @@
       </div>
 
       <div id="language-switch">
-        <span>ru</span>
+        <span id="russian">ru</span>
         /
-        <span>en</span>
+        <span id="english">en</span>
       </div>
 
       <div id="logo" class="light-green-underline">
@@ -30,49 +30,50 @@
     <main>
       <div>
         <div>
-          <span class="bold-font">project name:</span>
-          <span>rating of cities</span>
+          <span id="project-header" class="bold-font">project name:</span>
+          <span id="project-description">rating of cities</span>
         </div>
 
         <div>
-          <span class="bold-font">customer name:</span>
-          <span>llc a+s transproekt</span> 
+          <span id="customer-header" class="bold-font">customer name:</span>
+          <span id="customer-description">llc a+s transproekt</span> 
         </div>
         
         <div>
-          <span class="bold-font">timespan:</span>
+          <span id="timespan-header" class="bold-font">timespan:</span>
           <span>2022</span>
         </div>
 
         <div>
-          <span class="bold-font">web-page:</span>
-          <span>dead</span> 
+          <span id="web-page-link-header" class="bold-font">web-page:</span>
+          <span id="web-page-link-description">dead</span> 
         </div>
 
         <div>
-          <span class="bold-font">feedback:</span>
-          <a href="https://drive.google.com/file/d/180E2yGyYdordJjBZlmKKPZZ2H6Ktj0Zb/view?usp=sharing">
+          <span id="feedback-header" class="bold-font">feedback:</span>
+          <a id="feedback-description" href="https://drive.google.com/file/d/180E2yGyYdordJjBZlmKKPZZ2H6Ktj0Zb/view?usp=sharing">
             manager's review
           </a>
         </div>
 
         <div>
-          <span class="bold-font">responsibilities:</span>
-          <span>
+          <span id="responsibilities-header" class="bold-font">responsibilities:</span>
+          <span id="responsibilities-description">
             python on django, 
             frontend on html / css / js,
-            team management
+            developer team management
           </span>
         </div>
 
         <div>
-          <span class="bold-font">description:</span>
-          <span>
-            the projects was done as a part of the summer practice at the
+          <span id="description-header" class="bold-font">description:</span>
+          <span id="description-description">
+            the project was done as a part of the summer practice at the
             university. its target was to create a webpage to store info
             about scientific research about quality of public transport of 
-            more than 80 russian cities in an attracting way. it had a lot of
-            schemas, graphics and auto uploading using excel
+            more than 80 russian cities in a visually attracting way. it had 
+            a lot of schemas, graphics and auto population of database using 
+            excel
           </span>
         </div>
       </div>
@@ -114,5 +115,10 @@
     </main>
 
     <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="../../static/scripts/language-switches/support.js"></script>
+    <script src="../../static/scripts/language-switches/available-languages.js"></script>
+    <script src="../../static/scripts/language-switches/set-current-language.js"></script>
+    <script src="../../static/scripts/language-switches/projects/rating-of-cities.js"></script>
   </body>
 </html>
