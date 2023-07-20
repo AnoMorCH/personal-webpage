@@ -15,12 +15,12 @@ function getLanguageJsonFile(filePath) {
 }
 
 function switchLanguage(currentLanguage, templatePath) {
-  getLanguageJsonFile(templatePath).then((allTranslations) => { 
+  getLanguageJsonFile(templatePath).then((allTranslations) => {
     const currentLanguageTranslation = allTranslations[currentLanguage];
     for (const elementId in currentLanguageTranslation) {
       const elementTranslation = currentLanguageTranslation[elementId];
       const element = document.getElementById(elementId);
-      element.innerHTML = elementTranslation;
+      if (element !== null) { element.innerHTML = elementTranslation; }
     }
   });
 }
