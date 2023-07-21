@@ -200,6 +200,10 @@ main#home > * {
 }
 
 /* Technical classes */
+.black-color {
+  color: black;
+}
+
 .light-green-color {
   color: var(--light-green-color);
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="title"></title>
-    <link rel="stylesheet" href="../static/styles/main.css" />
+    <link rel="stylesheet" href="/static/styles/main.css" />
   </head>
 
   <body>
@@ -34,13 +34,17 @@
 
       <div id="projects-container">
         <div class="content-img">
-          <img src="../../static/imgs/rating-of-cities/cover.png" alt="rating-of-cities">
-          <div id="rating-of-cities-description"></div>
+          <a href="/templates/projects/rating-of-cities.html">
+            <img src="/static/imgs/rating-of-cities/cover.png" alt="rating-of-cities">
+            <div id="rating-of-cities-description"></div>
+          </a>
         </div>
 
         <div class="content-img">
-          <img src="../../static/imgs/graphs-of-rating-of-cities/cover.png" alt="graphs-rating-of-cities">
-          <div id="graphs-for-the-rating-of-cities"></div>
+          <a href="/templates/projects/graphs-of-rating-of-cities.html">
+            <img src="/static/imgs/graphs-of-rating-of-cities/cover.png" alt="graphs-rating-of-cities">
+            <div id="graphs-for-the-rating-of-cities"></div>
+          </a>
         </div>
 
         <!-- A template to add a new project. -->
@@ -53,8 +57,8 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-  <script src="../static/scripts/language-switches/helpers/support.js"></script>
-  <script src="../static/scripts/language-switches/enums/available-languages.js"></script>
-  <script src="../static/scripts/language-switches/helpers/set-current-language.js"></script>
-  <script src="../static/scripts/language-switches/templates-translation/projects.js"></script>
+  <script src="/static/scripts/language-switches/helpers/support.js"></script>
+  <script src="/static/scripts/language-switches/enums/available-languages.js"></script>
+  <script src="/static/scripts/language-switches/helpers/set-current-language.js"></script>
+  <script src="/static/scripts/language-switches/templates-translation/projects.js"></script>
 </html>
