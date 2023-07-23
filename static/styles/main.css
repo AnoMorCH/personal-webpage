@@ -3,7 +3,7 @@
 /* Colors */
 /* General */
 /* Header */
-/* - Setups */
+/* - Grid */
 /* - Burger */
 /* Main */
 /* - Home */
@@ -14,10 +14,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 /* Colors */
-/* TODO. Try to use vars instead of hard coded pixels in responsive design. */
 :root {
   --light-green-color: rgba(60, 179, 113, 1);
   --light-blue-color: rgba(82, 148, 247, 1);
+  --body-n-burger-items-margin-top-down: 24px;
 }
 
 /* General */
@@ -28,10 +28,14 @@
 }
 
 body {
-  max-width: 1024px;
-  margin: 24px auto;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+}
+
+body,
+#burger-items {
+  max-width: 1024px;
+  margin: var(--body-n-burger-items-margin-top-down) auto;
 }
 
 a {
@@ -41,22 +45,27 @@ a {
 }
 
 @media (max-width: 1024px) {
-  body {
+  body,
+  #burger-items {
     max-width: 768px;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    max-width: 90vw;
-    margin: 5vw auto;
     font-size: 14px;
+  }
+
+  body,
+  #burger-items {
+    max-width: 90vw;
+    margin: 5vw auto; 
   }
 }
 
 /* Header */
-/* - Setups */
-header {
+/* - Grid */
+header > #grid {
   max-height: 20vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,12 +75,12 @@ header {
   font-size: 24px;
 }
 
-header > div:nth-child(2n) {
+header > #grid > div:nth-child(2n) {
   text-align: right;
 }
 
 @media (max-width: 768px) {
-  header {
+  header > #grid {
     max-height: none;
   }
 }
@@ -87,6 +96,58 @@ header > div:nth-child(2n) {
   height: 4px;
   background-color: black;
   margin: 6px 0;
+}
+
+#burger-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  z-index: 10000;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100vh;
+  width: 100vw;
+  height: calc(100vh - 2 * var(--body-n-burger-items-margin-top-down));
+
+  font-size: 64px;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+#burger-items > div {
+  padding: 2vh 0;
+}
+
+#burger-items > div > a:hover {
+  color: var(--light-green-color);
+}
+
+#close-burger-menu-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 48px;
+}
+
+#close-burger-menu-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #burger-items {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  #burger-items {
+    font-size: 40px;
+  }
 }
 
 /* - Language Switch */

@@ -10,23 +10,25 @@
 
   <body>
     <header>
-      <div id="go-back">
-        <a href="/templates/projects.html" class="black-color">
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
+      <div id="grid">
+        <div id="go-back">
+          <a href="/templates/projects.html" class="black-color">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+  
+        <div id="language-switch">
+          <span id="russian"></span>
+          /
+          <span id="english"></span>
+        </div>
+  
+        <div id="logo" class="light-green-underline">
+          <span>anomorch</span>
+        </div>
+  
+        <div id="page-name" class="light-green-color"></div>
       </div>
-
-      <div id="language-switch">
-        <span id="russian"></span>
-        /
-        <span id="english"></span>
-      </div>
-
-      <div id="logo" class="light-green-underline">
-        <span>anomorch</span>
-      </div>
-
-      <div id="page-name" class="light-green-color"></div>
     </header>
 
     <main>
@@ -116,12 +118,13 @@
         </div> -->
       </div>
     </main>
-
-    <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="/static/scripts/language-switches/helpers/support.js"></script>
-    <script src="/static/scripts/language-switches/enums/available-languages.js"></script>
-    <script src="/static/scripts/language-switches/helpers/set-current-language.js"></script>
-    <script src="/static/scripts/language-switches/templates-translation/projects/rating-of-cities.js"></script>
   </body>
+
+  <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="/static/scripts/burger/index.js"></script>
+  <script src="/static/scripts/language-switches/helpers/support.js"></script>
+  <script src="/static/scripts/language-switches/enums/available-languages.js"></script>
+  <script src="/static/scripts/language-switches/helpers/set-current-language.js"></script>
+  <script src="/static/scripts/language-switches/templates-translation/projects/rating-of-cities.js"></script>
 </html>

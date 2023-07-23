@@ -10,23 +10,41 @@
 
   <body>
     <header>
-      <div id="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div id="grid">
+        <div id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div id="language-switch">
+          <span id="russian"></span>
+          /
+          <span id="english"></span>
+        </div>
+
+        <div id="logo" class="light-green-underline">
+          <span>anomorch</span>
+        </div>
+
+        <div id="page-name" class="light-green-color"></div>
       </div>
 
-      <div id="language-switch">
-        <span id="russian"></span>
-        /
-        <span id="english"></span>
-      </div>
+      <div id="burger-items">
+        <i id="close-burger-menu-btn" class="fa-solid fa-xmark"></i>
 
-      <div id="logo" class="light-green-underline">
-        <span>anomorch</span>
-      </div>
+        <div>
+          <a href="/templates/index.html" class="black-color" id="home-link"></a>
+        </div>
 
-      <div id="page-name" class="light-green-color"></div>
+        <div>
+          <a href="/templates/about-me.html" class="black-color" id="about-me-link"></a>
+        </div>
+
+        <div>
+          <a href="/templates/projects.html" class="black-color" id="projects-link"></a>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -56,9 +74,12 @@
     </main>
   </body>
 
+  <script src="https://kit.fontawesome.com/d41b91cba2.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="/static/scripts/burger/index.js"></script>
   <script src="/static/scripts/language-switches/helpers/support.js"></script>
   <script src="/static/scripts/language-switches/enums/available-languages.js"></script>
   <script src="/static/scripts/language-switches/helpers/set-current-language.js"></script>
   <script src="/static/scripts/language-switches/templates-translation/projects.js"></script>
+  <script src="/static/scripts/language-switches/burger-translation/index.js"></script>
 </html>
