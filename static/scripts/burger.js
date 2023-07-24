@@ -2,7 +2,7 @@
 // translation process.
 
 import { NavMenu } from "./burger/nav-menu.js";
-import { switchBurgerLanguage } from "./language-switches/burger-translation/burger-translation.js";
+import { switchBurgerLanguage } from "./language-switches/burger-translation/burger.js";
 
 main();
 

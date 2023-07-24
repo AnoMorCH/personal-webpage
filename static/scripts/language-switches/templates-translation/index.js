@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   
   function switchIndexLanguage() {
     const currentLanguage = getCurrentLanguage();
-    const templatePath = "/static/language/index.json";
+    const templatePath = "/static/language/templates-translation/index.json";
     switchLanguage(currentLanguage, templatePath);
   }
 });

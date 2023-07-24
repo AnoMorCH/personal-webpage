@@ -4,7 +4,7 @@ import { getCurrentLanguage, switchLanguage } from "../helpers/support.js";
 
 function switchBurgerLanguage() {
   const currentLanguage = getCurrentLanguage();
-  const templatePath = "/static/language/burger/index.json";
+  const templatePath = "/static/language/burger-translation/burger.json";
   switchLanguage(currentLanguage, templatePath);
 }
 

@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   
   function switchAboutMeLanguage() {
     const currentLanguage = getCurrentLanguage();
-    const templatePath = "/static/language/about-me.json";
+    const templatePath = "/static/language/templates-translation/about-me.json";
     switchLanguage(currentLanguage, templatePath);
   }
 });

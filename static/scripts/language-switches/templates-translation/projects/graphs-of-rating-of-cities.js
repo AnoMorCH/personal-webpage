@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   
   function switchGraphOfRatingOfCitiesLanguage() {
     const currentLanguage = getCurrentLanguage();
-    const templatePath = "/static/language/projects/graphs-of-rating-of-cities.json";
+    const templatePath = "/static/language/templates-translation/projects/graphs-of-rating-of-cities.json";
     switchLanguage(currentLanguage, templatePath);
   }
 });
