@@ -1,12 +1,8 @@
 // Set up a language. 
 
-const languageVarName = "language";
-const lightGreenColorClassName = "light-green-color";
-
-setInitialLanguage();
-const languageSwitchBtns = getLanguageSwitchBtns();
-setEventsOnLanguageSwitchBtns(languageSwitchBtns);
-colorSelectedLanguageBtn();
+import { Language } from "../enums.js";
+import { getCurrentLanguage } from "./support.js";
+import { languageVarName, lightGreenColorClassName } from "../consts.js";
 
 function getLanguageSwitchBtns() {
   const languages = document.getElementById("language-switch");
@@ -29,14 +25,21 @@ function setCurrentLanguageCookie(selectedLanguage) {
 }
 
 function colorSelectedLanguageBtn() {
-  const currentLanguage = getCurrentLanguage(); 
+  const currentLanguage = getCurrentLanguage();
   const languageBtn = document.getElementById(currentLanguage);
   languageBtn.classList.add(lightGreenColorClassName);
 }
 
 function setInitialLanguage() {
-  const currentLanguage = getCurrentLanguage(); 
+  const currentLanguage = getCurrentLanguage();
   if (currentLanguage === undefined) {
     Cookies.set(languageVarName, Language.English);
   };
 }
+
+export {
+  setInitialLanguage,
+  getLanguageSwitchBtns,
+  setEventsOnLanguageSwitchBtns,
+  colorSelectedLanguageBtn
+};

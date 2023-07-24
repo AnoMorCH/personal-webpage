@@ -1,9 +1,13 @@
 // Switch a language of projects/graphs-of-rating-of-cities.html template.
 
-switchGraphOfRatingOfCitiesLanguage();
+import { getCurrentLanguage, switchLanguage } from "../../helpers/support.js";
 
-function switchGraphOfRatingOfCitiesLanguage() {
-  const currentLanguage = getCurrentLanguage();
-  const templatePath = "/static/language/projects/graphs-of-rating-of-cities.json";
-  switchLanguage(currentLanguage, templatePath);
-}
+window.addEventListener("DOMContentLoaded", () => {
+  switchGraphOfRatingOfCitiesLanguage();
+  
+  function switchGraphOfRatingOfCitiesLanguage() {
+    const currentLanguage = getCurrentLanguage();
+    const templatePath = "/static/language/projects/graphs-of-rating-of-cities.json";
+    switchLanguage(currentLanguage, templatePath);
+  }
+});

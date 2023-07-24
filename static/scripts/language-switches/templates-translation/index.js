@@ -1,9 +1,13 @@
 // Switch a language of index.html template.
 
-switchIndexLanguage();
+import { getCurrentLanguage, switchLanguage } from "../helpers/support.js";
 
-function switchIndexLanguage() {
-  const currentLanguage = getCurrentLanguage();
-  const templatePath = "/static/language/index.json";
-  switchLanguage(currentLanguage, templatePath);
-}
+window.addEventListener("DOMContentLoaded", () => {
+  switchIndexLanguage();
+  
+  function switchIndexLanguage() {
+    const currentLanguage = getCurrentLanguage();
+    const templatePath = "/static/language/index.json";
+    switchLanguage(currentLanguage, templatePath);
+  }
+});

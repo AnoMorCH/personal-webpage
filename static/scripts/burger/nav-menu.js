@@ -17,7 +17,7 @@ class NavMenu {
     this.#navMenu.style.transform = "translateY(100vh)";
     this.#hideMainContent();
   }
-  
+
   #close() {
     this.#navMenu.style.transform = "translateY(0)";
     this.#showMainContent();
@@ -39,5 +39,4 @@ class NavMenu {
   }
 }
 
-const navMenu = new NavMenu();
-navMenu.manageEventsToOpenClose();
+export { NavMenu };

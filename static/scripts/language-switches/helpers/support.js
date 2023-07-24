@@ -1,3 +1,5 @@
+import { languageVarName } from "../consts.js";
+
 function getCurrentLanguage() {
   return Cookies.get(languageVarName);
 }
@@ -24,3 +26,5 @@ function switchLanguage(currentLanguage, templatePath) {
     }
   });
 }
+
+export { getCurrentLanguage, getLanguageJsonFile, switchLanguage };
