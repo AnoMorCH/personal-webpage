@@ -2,12 +2,10 @@
 
 import { getCurrentLanguage, switchLanguage } from "../helpers/support.js";
 
-window.addEventListener("DOMContentLoaded", () => {
-  switchIndexLanguage();
-  
-  function switchIndexLanguage() {
-    const currentLanguage = getCurrentLanguage();
-    const templatePath = "/static/language/templates-translation/index.json";
-    switchLanguage(currentLanguage, templatePath);
-  }
-});
+switchIndexLanguage();
+
+function switchIndexLanguage() {
+  const currentLanguage = getCurrentLanguage();
+  const templatePath = "/static/language/templates-translation/index.json";
+  switchLanguage(currentLanguage, templatePath);
+}
