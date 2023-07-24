@@ -14,12 +14,14 @@ class NavMenu {
   }
 
   #open() {
-    this.#navMenu.style.transform = "translateY(100vh)";
+    const styleToOpenMenu = "translateY(100vh)";
+    this.#navMenu.style.transform = styleToOpenMenu; 
     this.#hideMainContent();
   }
 
   #close() {
-    this.#navMenu.style.transform = "translateY(0)";
+    const styleToCloseMenu = "translateY(0)";
+    this.#navMenu.style.transform = styleToCloseMenu; 
     this.#showMainContent();
   }
 
